@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import close from "../../HOMEPAGE/assets/close.svg";
 import menu from "../../HOMEPAGE/assets/menu.svg";
-import logo from "../../HOMEPAGE/assets/logo.png";
 import styles from "../../style";
 import { navLinks, buttonLinks } from "../../HOMEPAGE/constants";
 
@@ -13,9 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     function changeColor() {
       const scrollY = window.scrollY;
-      if (scrollY > 1000 && scrollY <= 2500) {
-        setColor("bg-navbar-1");
-      } else if (scrollY > 2500 && scrollY <= 9000) {
+      if (scrollY > 2000 && scrollY <= 9000) {
         setColor("bg-navbar-2");
       } else {
         setColor("bg-purple-gradient");
@@ -29,17 +26,22 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`w-full flex py-2 px-4 md:px-6 justify-between items-center
-        ${color} bg-purple-gradient fixed z-[100]`}
+        className={`w-full flex py-[30px] px-4 md:px-6 justify-between items-center
+         ${color} bg-purple-gradient fixed z-[100] h-[95px] xs:h-[100px] sm:h-[125px]`}
       >
-        <a href="">
-
-        <img
-          src={logo}
-          alt="hoobank"
-          className="md:w-[300px] w-[280px] h-[92px]"
-          loading="lazy"
-        />
+        <a href="/">
+          <div className="-mx-[30px] sm:mx-0 md:max-w-[700px] max-w-[200px] max-h-[120px] flex flex-row items-center">
+            <img
+              src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/bbbbqgjfs494kia7vlw5.jpg"
+              alt="Sparksites Studio Logo"
+              className="max-w-[100px] xs:max-w-[130px] sm:max-w-[160px]"
+            />
+            <img
+              src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/wrix6smtc2bi79aeocix.jpg"
+              alt="SPARKSITES STUDIOS"
+              className="sm:w-[280px] w-[140px] xs:w-[170px] -ml-[40px] sm:-ml-[50px] -mt-[5px]"
+            />
+          </div>
         </a>
 
         <ul className="list-none md:flex hidden justify-end items-center flex-1">
@@ -55,25 +57,24 @@ const Navbar = () => {
             </li>
           ))}
           <a href={buttonLinks[0].link}>
-            <button className="btn py-3 px-4 bg-navbar font-roboto font-medium text-[18px] text-white outline-none rounded-full">
+            <button className="btn py-3 px-4 bg-navbar roboto font-medium text-[18px] text-white rounded-full">
               Request A Proposal
             </button>
           </a>
         </ul>
 
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center z-[10000]">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain z-[100]"
+            className="w-[20px] ss:w-[28px] h-[28px] object-contain z-[10000]"
             onClick={() => setToggle(!toggle)}
-            loading="lazy"
           />
 
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-purple-gradient nav transition-all duration-500 ease-in-out`}
+            } p-6 bg-purple-gradient w-[65%] xs:w-[58%] ss:w-[50%] nav transition-all duration-500 ease-in-out`}
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col">
               {navLinks.map((nav, index) => (
@@ -88,7 +89,7 @@ const Navbar = () => {
                 </li>
               ))}
               <a href={buttonLinks[0].link}>
-                <button className="btn py-3 px-4 bg-navbar font-roboto font-medium text-[12px] text-white outline-none rounded-full">
+                <button className="btn py-2 ss:py-4 px-2 ss:px-4 bg-navbar font-roboto font-medium text-[12px] xs:text-[14px] ss:text-[16px] text-white outline-none rounded-full">
                   Request A Proposal
                 </button>
               </a>
@@ -96,7 +97,11 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="scroll-watcher"></div>
+      <div
+        className={`${
+          toggle ? "hidden" : "block"
+        } top-[90px] xs:top-[95px] sm:top-[119px] scroll-watcher`}
+      ></div>
     </>
   );
 };

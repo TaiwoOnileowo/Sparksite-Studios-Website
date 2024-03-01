@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import deeds from "../assets/deeds.jpg";
 import styles, { layout } from "../../style";
 import { services } from "../constants";
 
@@ -28,28 +27,27 @@ const ServiceCard = ({ icon, title, content, index }) => {
   return (
     <div className={`${isVisible ? "show" : ""}`}>
       <div
-        className={` flex flex-row w-full px-[120px] sm:p-6 md:p-6 rounded-[20px] ${
+        className={`flex flex-row w-full p-4 xs:p-6 rounded-[20px] ${
           index !== services.length - 1 ? "mb-6" : "mb-0"
         } deed `}
         ref={contentRef}
       >
         <div
-          className={`w-[64px] h-[64px] rounded-full ${
+          className={`w-[45px] h-[45px] xs:w-[50px] xs:h-[50px] sm:w-[64px] sm:h-[64px] rounded-full ${
             styles.flexCenter
-          } bg-dimPurple ${isVisible ? "show" : ""}`}
+          } bg-[#fff] ${isVisible ? "show" : ""}`}
         >
           <img
             src={icon}
             alt="star"
             className="w-[50%] h-[50%] object-contain content"
-            loading="lazy"
           />
         </div>
         <div className={`flex-1 flex flex-col ml-3 ${isVisible ? "show" : ""}`}>
-          <h4 className="font-roboto font-semibold text-white text-[22px] leading-[23.4px] mb-1 content">
+          <h4 className="font-semibold text-white text-[16px] xs:text-[18px] sm:text-[22px] leading-[23.4px] mb-1 content">
             {title}
           </h4>
-          <p className="font-roboto font-normal text-dimWhite text-[20px] leading-[24px] content1">
+          <p className=" font-normal text-dimWhite text-[14px] xs:text-[18px] sm:text-[20px] leading-[24px] content1">
             {content}
           </p>
         </div>
@@ -60,35 +58,30 @@ const ServiceCard = ({ icon, title, content, index }) => {
 
 const Deeds = () => {
   return (
-    <section className=" w-full py-16 px-2 md:px-4 bg-[#2d2d78]">
-      <div className="justify-center flex flex-col items-center">
-        <h2 className={`${styles.heading2} text-white`}>What We Do</h2>
-        <p className={`${styles.paragraph} text-white text-center`}>
-          We Aim At Elevating Your Brand's Online Presence
-        </p>
-        <div>
-          <img
-            src={deeds}
-            className="max-w-[1280px] lg:max-h-[600px] sm:max-h-[400px] max-h-[200px] mx-auto my-4 rounded-[10px]"
-            alt="Laptop image"
-            loading="lazy"
-          />
+    <section className=" w-full py-16 px-2 md:px-4 color-2">
+      <div className="flex flex-col">
+        <div className="flex flex-col items-center mx-6 md:mx-36">
+          <h2
+            className={`${styles.heading2} sm:max-w-[450px] text-white text-center`}
+          >
+            Take Your Brand To The Next Level
+          </h2>
+          <p className={`${styles.heading2} xs:pt-4  text-white py-2 xs:py-6`}>
+            We Offer:
+          </p>
         </div>
-
-        <h2
-          className={`${styles.paragraph} text-[44px] text-white text-center py-6`}
-        >
-          We Build
-        </h2>
         <div className="flex justify-center items-center">
           <div className={`${layout.sectionImg} flex-col`}>
             {services.map((service, index) => (
               <ServiceCard key={service.id} {...service} index={index} />
             ))}
-            <a href="/services#get-started" className="link ml-[180px]">
-              <span className={`span`}>Get Started</span>
-              <div className="liquid"></div>
-            </a>
+            <div className="flex justify-center items-center">
+              <a href="/services#get-started">
+                <button className={`${styles.button} btn3 mt-8`}>
+                  Get Started
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ import Modal from '../SERVICES/components/Modal'
 
 const services = () => {
   return (
-    <div className="DmSansSerif w-full overflow-hidden">
+    <div className="roboto w-full overflow-hidden">
     <div className={`${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar/>

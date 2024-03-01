@@ -6,7 +6,7 @@ import ContactSection from '../CONTACT/components/ContactSection'
 import CTA from '../CONTACT/components/CTA'
 const Contact = () => {
   return (
-    <div className="DmSansSerif w-full overflow-hidden">
+    <div className="roboto w-full overflow-hidden">
     <div className={`${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar/>

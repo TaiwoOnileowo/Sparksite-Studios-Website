@@ -1,30 +1,24 @@
 import React from "react";
-import { buttonLinks } from "../constants";
-
+import styles from "../../style";
 const CTA = () => {
   return (
     <section>
-      <div className="bg-CTA-image bg-cover h-[400px] bg-center md:bg-fixed">
+      <div className="bg-CTA-image bg-cover h-[320px] xs:h-[340px] ss:h-[300px] bg-center md:bg-fixed">
         <div className="flex justify-between flex-col md:flex-row">
-          <div className="flex items-center md:items-start pt-16 md:pt-6 md:ml-32 flex-col max-w-[430px]">
+          <div className="flex items-center md:items-start pt-6 ss:pt-8 md:pt-12 md:ml-32 flex-col max-w-[430px]">
             <h2
-              className={`leading-[38.8px] md:leading-[68.8px] text-[39px] md:text-[58px]  text-white md:text-left  text-center md:px-0 px-6`}
+              className={`${styles.heading3} text-white md:text-left md:px-0 ss:px-6 xs:px-[50px] px-[34px] font-bold`}
             >
               Lets Try Our Service Now!
             </h2>
-            <p className="font-roboto font-semibold text-[20px] md:text-[28px] leading-[24px] md:leading-[40px] text-white my-2 pl-12 sm:pr-2 pr-4 md:pl-0 md:pr-0">
-              Your Brand Needs an Upgrade! Try our services now and embark on a
-              journey of innovation and success. Elevate Your Brand's Online
-              Presence Now!
+            <p className="roboto text-[16px] xs:text-[18px] sm:text-[19px] md:text-[22px] xs:leading-[28px] md:leading-[35px] px-8 text-white my-[5px] ss:my-2 xs:pl-12 sm:pr-2 xs:pr-4 md:pl-0 md:pr-0">
+              Your brand needs an upgrade! Try our services now and take your
+              brand to the next level. Elevate your brand's online presence now!
             </p>
           </div>
-          <div className="justify-center items-center sm:justify-start md:justify-center px-0 sm:px-14 md:px-0 md:py-0 py-6 md:mr-48 flex max-w-[300px]">
-            <a
-              href={buttonLinks[0].link}
-              className="link-cta sm:ml-0 md:ml-0 ml-[45px]  md:mt-[40px] sm:mt-[10px]"
-            >
-              <span className="span ">Get Started</span>
-              <div className="liquid"></div>
+          <div className="flex md:justify-center px-8 xs:px-12 mt-2 ss:mt-4 md:px-0 md:w-[400px] items-start md:items-center">
+            <a href="/services#get-started">
+              <button className={`${styles.button} btn3`}>Get Started</button>
             </a>
           </div>
         </div>

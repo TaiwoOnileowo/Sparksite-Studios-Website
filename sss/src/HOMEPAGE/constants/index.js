@@ -1,23 +1,14 @@
-import carousel1 from "../assets/carousel11.jpg";
-import carousel2 from "../assets/carousel12.jpg";
-import carousel3 from "../assets/carousel13.jpg";
-import landing from "../assets/landing.svg";
-import blog from "../assets/blog.svg";
+import carousel1 from "../assets/carousel1.webp";
+import carousel2 from "../assets/carousel2.webp";
+import carousel3 from "../assets/carousel3.webp";
+import websiteicon from "../assets/websiteicon.svg";
+import seoicon from "../assets/seoicon.svg";
+import supporticon from "../assets/supporticon.svg";
+import responsiveicon from "../assets/responsiveicon.svg";
 import commerce from "../assets/commerce.png";
-import website from "../assets/website.png";
-import rhodabeddings from "../assets/rhodabeddings.png";
-import hoobank from "../assets/hoobank.png";
-import DREX from "../assets/DREX.png";
-import hoobanklogo from "../assets/hoobanklogo.png";
-import rhodabeddingslogo from "../assets/rhodabeddingslogo.jpg";
-import Dekitchen1 from "../assets/Dekitchen1.png";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import linkedin from "../assets/linkedin.svg";
-import gmail from "../assets/gmail.png";
-import hoobankclient1 from "../../SERVICES/assets/hoobankclient1.png";
-import rhodabeddingsclient from "../../SERVICES/assets/rhodabeddingsclient.png";
-import dekitchenclient from "../../SERVICES/assets/dekitchenclient.png";
 
 export const navLinks = [
   {
@@ -60,20 +51,20 @@ export const carousel = [
   {
     image: carousel1,
     heading: "Welcome to Sparksites Studios",
-    subHeading: "We Aim At Elevating Your Brand's Online Presence",
+    subHeading: "Empowering Brands - One Spark At A Time",
     btnText: "Get Started",
   },
   {
     image: carousel2,
     heading: "Our Mission",
-    subHeading: "Transforming Visions Into Captivating Online Realities",
+    subHeading: "Take Your Brand To The Next Level",
     btnText: "Learn More",
   },
   {
     image: carousel3,
     heading: "Let's Create Together",
-    subHeading: "Ready to Elevate Your Digital Presence?",
-    extraText: "Get Started with Sparksites Studios now",
+    subHeading: "Ready to Empower Your Brand?",
+    extraText: "Get Started with Sparksites Studios Now",
     btnText: "Get Started",
   },
 ];
@@ -81,63 +72,73 @@ export const carousel = [
 export const services = [
   {
     id: "service-1",
-    icon: landing,
-    title: "Landing Pages",
+    icon: websiteicon,
+    title: "Custom Website Design and Development",
     content:
-      "At Sparksites Studios, we take pride in creating landing pages that captivate your audience, embody modern design trends, and seamlessly adapt to every device. Our commitment to excellence ensures that your online presence not only looks stunning but also functions flawlessly.",
+      "At Sparksites Studios, we specialize in crafting quality websites that aligns with your the goal of your brand. We build Corporate and Professional websites, Landing Pages, E-commerce websites and stores, Blog websites, etc in all sectors. Let's take your brand to the next level. Contact Us to learn more. ",
   },
   {
     id: "service-2",
-    icon: blog,
-    title: "Blog Websites",
+    icon: responsiveicon,
+    title: "Responsive and Mobile-Friendly Layouts",
     content:
-      "At Sparksites Studios, we specialize in crafting blog websites that not only look great but also perform exceptionally well. Our commitment to excellence extends beyond aesthetics, focusing on optimization to ensure your content reaches its full potential.",
+      "What is a quality website without responsiveness? At Sparksites studios, we keep that in mind, crafting websites that are responsive on all devices. We provide all sorts of unique and modern mobile-friendly layouts. We've got you covered. Contact us and get started.",
   },
   {
     id: "service-3",
     icon: commerce,
-    title: "E-commerce websites",
+    title: "E-commerce solutions",
     content:
-      "We specialize in transforming online shopping experiences. Our ecommerce websites are more than just platforms; they are beautifully designed, modern, and equipped with the features needed to thrive in the digital marketplace.",
+      "We specialize in developing quality online shopping experiences. Our ecommerce websites are beautifully designed, modern, and equipped with great functionalities. We integrate booking and ordering functionality, users can search and filter products, pay for goods, and lots more. We integrate custom features too. Let us know what you have in mind.",
   },
   {
     id: "service-4",
-    icon: website,
-    title: "Corporate and Professional Websites",
+    icon: seoicon,
+    title: "Search Engine Optimization(SEO) and Google Analytics",
     content:
-      "We specialize in the art of crafting professional websites that not only meet industry standards but redefine them. Our commitment to excellence extends beyond aesthetics, focusing on creating user-friendly, modern, and responsive web solutions tailored to elevate your business.",
+      "Visibility is Key. All our websites are equipped with the best SEO practices. We also include Google Analytics tracking so you can ve well informed on how your website is doing. What are you waiting for? Get Started With Us Now!",
+  },
+  {
+    id: "service-5",
+    icon: supporticon,
+    title: "24/7 Support and Maintenance",
+    content:
+      "Our web design process doesn't end in developing your website, we provide 24/7 support and maintenance, helping you navigate any issues you might have.",
   },
 ];
 
 export const portfolio = [
   {
     title: "Rhoda Beddings",
-    imageSrc: rhodabeddings,
-    description: "A professional website developed for rhodabeddings business",
+    imageSrc:
+      "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/ag1ufguhfcssvzausmef.jpg",
+    description: "A full fledged professional website developed for rhodabeddings business with ordering functionality",
     demo: "https://rhodabeddings.com.ng/",
   },
   {
-    title: "Hoobank",
-    imageSrc: hoobank,
-    description: "A responsive modern landing page for hoobank company",
-    demo: "https://h00bankweb.netlify.app/",
-  },
-  {
     title: "Drex Hosting Company",
-    imageSrc: DREX,
+    imageSrc:
+      "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/u06i9xhlqq0lpwseqohb.jpg",
     description:
       "A responsive modern landing page made for DREX hosting and domains company.",
     demo: "https://drexhosting.netlify.app/",
+  },
+  {
+    title: "Hoobank",
+    imageSrc:
+      "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/zs8zwvdtda1sj8bbmdbc.jpg",
+    description: "A responsive modern landing page for Hoobank company",
+    demo: "https://h00bankweb.netlify.app/",
   },
 ];
 export const feedback = [
   {
     id: "feedback-1",
     content:
-      "They're really legit! They built an amazing professional website for my business with a moderate budget in a short amount of time",
+      "They're absolutely legit! They developed an amazing professional website for my business with a moderate budget in a short amount of time.",
     name: "Rhoda Beddings",
     title: "A beddings company",
-    img: rhodabeddingslogo,
+    img: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/pzluce13hera8jmfokva.jpg",
   },
   {
     id: "feedback-2",
@@ -145,15 +146,15 @@ export const feedback = [
       "The landing page built for me was a standout one, with a modern and beautiful layout.",
     name: "Hoobank",
     title: "Credit Card Company",
-    img: hoobanklogo,
+    img: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/ttkdstaql8rmaz9rsp2m.jpg",
   },
   {
     id: "feedback-3",
     content:
-      " My Restaurant has been revolutionised by Sparksites Studios, Customers can now order and pay online while we deliver to them",
+      " My Restaurant has changed levels thanks to Sparksites Studios, Customers now order and pay from our website.",
     name: "De Kitchen",
     title: "A restaurant",
-    img: Dekitchen1,
+    img: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/veflf8i4nlurefhcfjhe.jpg",
   },
 ];
 export const footerLinks = [
@@ -199,7 +200,7 @@ export const socialMedia = [
   },
   {
     id: "social-media-2",
-    icon: gmail,
+    icon: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/qjwinjdkqrefwxm36wnd.jpg",
     link: "mailto:sparksiteofficial@gmail.com",
   },
   {
@@ -262,44 +263,46 @@ export const positions = [
 export const clients = [
   {
     id: "client-1",
-    logo: rhodabeddingsclient,
+    name: "rhodabeddings",
+    logo: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/r1wq9jm4itu8paqj3bih.jpg",
     link: "http://rhodabeddings.com.ng/",
   },
   {
     id: "client-2",
-    logo: hoobankclient1,
+    name: "hoobank",
+    logo: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/qnefgmubdvtn9abihdii.jpg",
     link: "https://h00bankweb.netlify.app/",
   },
   {
     id: "client-3",
-    logo: dekitchenclient,
+    name: "dekitchen",
+    logo: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/j0u0xkwoxmohikecqsk4.jpg",
   },
 ];
 
-export const Modalservices= [
+export const Modalservices = [
   {
-    id:"service-1",
-    service: "Custom website design"
+    id: "service-1",
+    service: "Custom website design",
   },
   {
-    id:"service-1",
-    service: "Responsive and mobile-friendly layouts"
+    id: "service-1",
+    service: "Responsive and mobile-friendly layouts",
   },
   {
-    id:"service-1",
-    service: " E-commerce solutions and online stores"
+    id: "service-1",
+    service: " E-commerce solutions and online stores",
   },
   {
-    id:"service-1",
-    service: "Booking and ordering functionalities"
+    id: "service-1",
+    service: "Booking and ordering functionalities",
   },
   {
-    id:"service-1",
-    service: "Search engine optimization"
+    id: "service-1",
+    service: "Search engine optimization",
   },
   {
-    id:"service-1",
-    service: "24/7 support and maintenance"
+    id: "service-1",
+    service: "24/7 support and maintenance",
   },
-  
-]
+];
