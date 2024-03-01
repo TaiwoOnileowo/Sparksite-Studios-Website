@@ -38,6 +38,7 @@ const Navbar = () => {
           src={logo}
           alt="hoobank"
           className="md:w-[300px] w-[280px] h-[92px]"
+          loading="lazy"
         />
         </a>
 
@@ -66,6 +67,7 @@ const Navbar = () => {
             alt="menu"
             className="w-[28px] h-[28px] object-contain z-[100]"
             onClick={() => setToggle(!toggle)}
+            loading="lazy"
           />
 
           <div

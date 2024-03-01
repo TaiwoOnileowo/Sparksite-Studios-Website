@@ -3,7 +3,7 @@ import close from "../../HOMEPAGE/assets/close.svg";
 import menu from "../../HOMEPAGE/assets/menu.svg";
 import logo from "../../HOMEPAGE/assets/logo.png";
 import styles from "../../style";
-import { navLinks } from "../../HOMEPAGE/constants";
+import { buttonLinks, navLinks } from "../../HOMEPAGE/constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("Contact Us");
@@ -31,7 +31,7 @@ const Navbar = () => {
     <nav className={`w-full flex py-2 px-6 justify-between items-center bg-purple-gradient fixed z-[100] ${color}`}>
       <a href="/">
 
-      <img src={logo} alt="hoobank" className="w-[300px] h-[92px]" />
+      <img src={logo} alt="hoobank" className="w-[300px] h-[92px]" loading="lazy"/>
       </a>
 
       <ul className="list-none md:flex hidden justify-end items-center flex-1">
@@ -46,7 +46,10 @@ const Navbar = () => {
             <a href={nav.link}>{nav.title}</a>
           </li>
         ))}
+        <a href={buttonLinks[0].link}>
+
         <button className="py-3 px-4 bg-navbar font-roboto btn font-medium text-[18px] text-white outline-none rounded-full">Request A Proposal</button>
+        </a>
       </ul>
 
       <div className="md:hidden flex flex-1 justify-end items-center">
@@ -55,6 +58,7 @@ const Navbar = () => {
           alt="menu"
           className="w-[28px] h-[28px] object-contain z-[100]"
           onClick={() => setToggle(!toggle)}
+          loading="lazy"
         />
 
         <div
@@ -74,7 +78,10 @@ const Navbar = () => {
                 <a href={nav.link}>{nav.title}</a>
               </li>
             ))}
+            <a href={buttonLinks[0].link}>
+
             <button className="py-3 px-4 bg-navbar font-roboto btn font-medium text-[12px] text-white outline-none rounded-full">Request A Proposal</button>
+            </a>
           </ul>
         </div>
       </div>

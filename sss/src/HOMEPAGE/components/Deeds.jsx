@@ -5,7 +5,8 @@ import { services } from "../constants";
 
 const ServiceCard = ({ icon, title, content, index }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const contentRef = useRef(null); const handleScroll = () => {
+  const contentRef = useRef(null);
+  const handleScroll = () => {
     if (contentRef.current) {
       const top = contentRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
@@ -18,28 +19,30 @@ const ServiceCard = ({ icon, title, content, index }) => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-
-    return (
+  return (
     <div className={`${isVisible ? "show" : ""}`}>
       <div
-        className={` flex flex-row px-32 md:p-6 rounded-[20px] ${
+        className={` flex flex-row w-full px-[120px] sm:p-6 md:p-6 rounded-[20px] ${
           index !== services.length - 1 ? "mb-6" : "mb-0"
         } deed `}
         ref={contentRef}
       >
         <div
-          className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimPurple ${isVisible ? "show" : ""}`}
+          className={`w-[64px] h-[64px] rounded-full ${
+            styles.flexCenter
+          } bg-dimPurple ${isVisible ? "show" : ""}`}
         >
           <img
             src={icon}
             alt="star"
             className="w-[50%] h-[50%] object-contain content"
+            loading="lazy"
           />
         </div>
         <div className={`flex-1 flex flex-col ml-3 ${isVisible ? "show" : ""}`}>
@@ -68,6 +71,7 @@ const Deeds = () => {
             src={deeds}
             className="max-w-[1280px] lg:max-h-[600px] sm:max-h-[400px] max-h-[200px] mx-auto my-4 rounded-[10px]"
             alt="Laptop image"
+            loading="lazy"
           />
         </div>
 

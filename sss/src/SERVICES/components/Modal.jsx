@@ -22,8 +22,8 @@ const Modal = () => {
 
   return (
     <div className={`${isOpen ? "flex" : "hidden"} overlay`}>
-      <div className="flex flex-row modal-container px-2 py-4 rounded-[20px] max-w-[300px] sm:max-w-[500px] md:max-w-[600px] md:top-[50%] top-[40%] left-[50%]">
-        <div className="md:max-w-[250px] sm:max-w-[200px] max-w-[150px] flex flex-col pt-2 items-center">
+      <div className="flex flex-row modal-container px-2 py-4 rounded-[20px] max-w-[380px] sm:max-w-[500px] md:max-w-[600px] md:top-[50%] top-[40%] left-[50%]">
+        <div className="md:max-w-[250px] sm:max-w-[200px] max-w-[180px] flex flex-col pt-2 mr-2 items-center">
           <h3 className="font-medium font-roboto md:leading-[50.8px] leading-[35.8px] md:text-[22px] sm:text-[20px] text-[16px] text-white rounded-full bg-[#00bfff83] px-2 sm:px-4">
             Limited Time Offer
           </h3>
@@ -31,6 +31,7 @@ const Modal = () => {
             src={sparksites}
             alt="sparksites logo"
             className="sm:pt-12 md:pt-0 pt-0"
+            loading="lazy"
           />
           <div className="absolute z-[0] w-[20%] h-[20%] top-[80%] left-[2%] rounded-full blue__gradient" />
           <div className="absolute z-[0] w-[20%] h-[20%] top-[1%] right-[2%] rounded-full blue__gradient" />
@@ -39,11 +40,12 @@ const Modal = () => {
           <img
             src={close}
             alt=""
-            className="absolute right-[2.5%] w-[15px] md:w-[20px] h-[28px] object-contain z-[100] cursor-pointer"
+            className="absolute right-[2%] top-[2%] w-[15px] md:w-[20px] h-[28px] object-contain z-[100] cursor-pointer"
             onClick={closeModal}
+            loading="lazy"
           />
         </div>
-        <div className=" md:max-w-[300px] flex flex-col">
+        <div className=" md:max-w-[300px] flex flex-col ml-2">
           <h1
             className={`leading-[25.8px] sm:leading-[48.8px] text-[20px] sm:text-[42px] text-white`}
           >
@@ -54,7 +56,7 @@ const Modal = () => {
           </p>
           <div className="">
             {Modalservices.map((modalservice) => (
-              <ul className="w-full sm:block hidden">
+              <ul className="w-full">
                 <li
                   key={modalservice.id}
                   className="font-medium text-white md:text-[19px] sm:text-[18px] text-[16px]"
@@ -64,7 +66,7 @@ const Modal = () => {
               </ul>
             ))}
             <button
-              className={`py-2 sm:py-4 mt-12 sm:mt-4 w-[130px] sm:w-[150px] md:w-[200px] md:mt-[20px] px-[30px] bg-[#A020F0] font-medium text-[16px] sm:text-[18px] text-white rounded-[20px] btn1`}
+              className={`py-4 mt-12 sm:mt-4 w-[150px] md:w-[200px] md:mt-[20px] px-[30px] bg-[#A020F0] font-medium text-[16px] sm:text-[18px] text-white rounded-[20px] btn1`}
               onClick={() => navigateToId("get-started")}
             >
               Get Started

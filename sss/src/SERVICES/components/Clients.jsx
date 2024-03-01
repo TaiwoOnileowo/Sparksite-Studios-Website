@@ -7,7 +7,7 @@ const Clients = () => {
     <div className='flex flex-row  items-center justify-center w-100%'>
       {clients.map((client)=>{
       return <div key={client.id} className='flex md:w-[400px] items-center' >
-        <a href={client.link} target='/blank'><img src={client.logo} alt={client} className='img' /></a>
+        <a href={client.link} target='/blank'><img src={client.logo} alt={client} className='img' loading="lazy"/></a>
       </div>
       })}
     </div>

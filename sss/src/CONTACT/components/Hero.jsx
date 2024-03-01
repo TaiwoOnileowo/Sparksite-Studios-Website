@@ -10,8 +10,8 @@ const Hero = () => {
     <section className='mt-[150px]'>
         <h1 className={`${styles.heading2} text-center`}>Connect With Us</h1>
         <div className='flex md:flex-row flex-col md:p-24'>
-            <div className='flex max-w-[900px] pt-8 md:pt-0'>
-            <img src={contact} className='w-full h-[350px] sm:h-[400px] md:h-[500px]' alt="" />
+            <div className='flex max-w-[900px] pt-8 md:pt-0'> 
+            <img src={contact} className='w-full h-[350px] sm:h-[400px] md:h-[500px]' alt="Connect With Us Image" loading="lazy" />
             </div>
             <div className='flex flex-col max-w-[400px] px-8 py-8 md:py-4'>
               <div className='pb-8'>

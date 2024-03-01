@@ -27,14 +27,14 @@ const ServiceCard = ({ icon, title, content, index }) =>{
   return(
     <div className={`${isVisible ? "show" : ""}`}>
   <div
-    className={`content flex px-32 flex-row p-4 md:p-6 rounded-[20px] ${
+    className={`content flex w-full px-32 sm:p-6 flex-row md:p-6 rounded-[20px] ${
       index !== services.length - 1 ? "mb-6" : "mb-0"
     } deed`} ref={contentRef}
   >
     <div
       className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-white`}
     >
-      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
+      <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" loading="lazy"/>
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-semibold text-white text-[22px] leading-[23.4px] mb-1">

@@ -6,7 +6,7 @@ const PortfolioCard = ({project:{title, imageSrc,description,demo}}) => {
   return (
   <div className="flex flex-col rounded-[10px] py-[15px] px-[20px] max-w-[300px] md:max-w-[345px] portfolio-card cursor-pointer">
     <img src={imageSrc}
-     alt={` Image of ${title}`} />
+     alt={` Image of ${title}`} loading="lazy"/>
     <h3 className="text-[25px] font-semibold my-2 text-[#d9d9d9]">{title}</h3>
     <p className={`${styles.paragraph}`}> {description}</p>
     <div className="w-[100%] mt-[25px] flex justify-around">

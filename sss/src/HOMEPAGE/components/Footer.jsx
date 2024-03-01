@@ -12,6 +12,7 @@ const Footer = () => (
             src={logo}
             alt="sparksites studios"
             className="w-[266px] h-[72.14px] object-contain"
+            loading="lazy"
           />
           </a>
           <p className={`${styles.paragraph} mt-4 max-w-[312px] text-white`}>
@@ -57,6 +58,7 @@ const Footer = () => (
                 index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
               }`}
               onClick={() => window.open(social.link)}
+              loading="lazy"
             />
           ))}
         </div>

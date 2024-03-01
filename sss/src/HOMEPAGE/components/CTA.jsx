@@ -18,8 +18,11 @@ const CTA = () => {
               Presence Now!
             </p>
           </div>
-          <div className="justify-center items-center sm:justify-start md:justify-center px-0 sm:px-14 md:px-0 md:py-0 py-6 md:mr-48 flex">
-            <a href={buttonLinks[0].link} className="link-cta ml-[50px] sm:ml-0 md:ml-0  md:mt-[40px] sm:mt-[10px]">
+          <div className="justify-center items-center sm:justify-start md:justify-center px-0 sm:px-14 md:px-0 md:py-0 py-6 md:mr-48 flex max-w-[300px]">
+            <a
+              href={buttonLinks[0].link}
+              className="link-cta sm:ml-0 md:ml-0 ml-[45px]  md:mt-[40px] sm:mt-[10px]"
+            >
               <span className="span ">Get Started</span>
               <div className="liquid"></div>
             </a>

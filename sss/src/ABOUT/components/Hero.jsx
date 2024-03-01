@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="pt-24">
       <div className="w-full relative">
-        <img src={build} className="w-full h-[340px]" alt="" />
+        <img src={build} className="w-full h-[340px]" alt="Elevate Your Brand Image" loading="lazy" />
       </div>
       <div className="absolute sm:max-w-[500px] max-w-[340px] sm:top-[15%] top-[21%] translate-x-6 sm:translate-x-[55%] justify-center flex md:translate-x-[122%] md:top-[25%]">
         <h1

@@ -63,6 +63,7 @@ function Carousel() {
           src={carousel[currentIndex].image}
           alt="carousel image"
           className="w-[100%] h-[450px] md:h-[600px] -z-10"
+          loading="lazy"
         />
       </div>
       <div

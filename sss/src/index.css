@@ -243,15 +243,11 @@ label {
 .link-cta {
   position: relative;
   padding: 30px 20px;
-  display: block;
   text-decoration: none;
   text-transform: uppercase;
   width: 400px;
   height: 70px;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  /* border-radius: 20px; */
 }
 .link-cta .span {
   position: relative;
