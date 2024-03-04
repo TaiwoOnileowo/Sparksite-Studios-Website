@@ -1,6 +1,6 @@
 import React from "react";
-import { layout } from "../../style";
-import styles from "../../style";
+import { layout } from "../../REUSED/constants/style";
+import styles from "../../REUSED/constants/style";
 
 const Mission = () => {
   return (
@@ -13,7 +13,7 @@ const Mission = () => {
           className={`flex justify-center items-center w-full md:ml-4 md:mr-[88px] md:max-w-[500px] md:max-h-[520px] md:mt-24`}
         >
           <img
-            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_50/dpr_auto/ebjv40dmxxdetlo7lubp.jpg"
+            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/ebjv40dmxxdetlo7lubp.jpg"
             alt="mission"
             className="w-[100%]"
           />

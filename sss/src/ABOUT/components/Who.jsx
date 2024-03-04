@@ -1,7 +1,7 @@
 import React from "react";
-import { layout } from "../../style";
-import styles from "../../style";
-
+import { layout } from "../../REUSED/constants/style";
+import styles from "../../REUSED/constants/style";
+import sparksitesstudios from "../assets/sparksitesstudios.svg";
 const Who = () => {
   return (
     <section
@@ -10,10 +10,10 @@ const Who = () => {
     >
       <div className="flex flex-col md:flex-row justify-center items-center w-full">
         <div
-          className={`flex justify-center mr-0 md:pr-14 w-full md:max-w-[550px] md:max-h-[450px] md:mt-16`}
+          className={`flex justify-center mr-0 md:pr-14 w-full md:max-w-[500px] md:max-h-[400px] sm:max-h-[530px] ss:max-h-[350px] xs:max-h-[250px] md:mt-16`}
         >
           <img
-            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/f9b8wzshksxfgpzcjebe.jpg"
+            src={sparksitesstudios}
             alt="sparksites studio"
             className="w-[100%]"
           />

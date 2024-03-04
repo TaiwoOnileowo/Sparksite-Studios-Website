@@ -286,23 +286,35 @@ export const Modalservices = [
     service: "Custom website design",
   },
   {
-    id: "service-1",
+    id: "service-2",
     service: "Responsive and mobile-friendly layouts",
   },
   {
-    id: "service-1",
+    id: "service-3",
     service: " E-commerce solutions and online stores",
   },
   {
-    id: "service-1",
+    id: "service-4",
     service: "Booking and ordering functionalities",
   },
   {
-    id: "service-1",
+    id: "service-5",
     service: "Search engine optimization",
   },
   {
-    id: "service-1",
+    id: "service-6",
     service: "24/7 support and maintenance",
   },
 ];
+
+export const servicesText=[
+ {
+  heading1: "Take Your Brand To The Next Level",
+  heading2: "We Offer:"
+ } ,
+ {
+  heading1: "Our Services",
+  heading2: ""
+ } 
+]
+

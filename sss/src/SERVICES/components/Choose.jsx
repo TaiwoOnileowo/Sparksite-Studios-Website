@@ -1,6 +1,6 @@
 import React from "react";
-import { layout } from "../../style";
-import styles from "../../style";
+import { layout } from "../../REUSED/constants/style";
+import styles from "../../REUSED/constants/style";
 const Choose = () => {
   return (
     <section className={`flex md:flex-row flex-col`}>

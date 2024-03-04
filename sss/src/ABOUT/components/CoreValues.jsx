@@ -1,20 +1,20 @@
 import React from "react";
-import { layout } from "../../style";
-import styles from "../../style";
-
+import { layout } from "../../REUSED/constants/style";
+import styles from "../../REUSED/constants/style";
+import corevalues from "../assets/corevalues.svg";
 const CoreValues = () => {
   return (
     <section
       id="who"
       className="flex md:flex-row flex-col bg-[#F8F8F9] justify-center items-center md:mb-[40px] pb-6"
     >
-      <div className="flex flex-col md:flex-row justify-center items-center">
+      <div className="flex flex-col md:flex-row w-full justify-center items-center">
         <div
-          className={`flex justify-center items-center w-full md:max-w-[450px] md:max-h-[530px] md:mt-[150px]`}
+          className={`flex justify-center w-full items-center md:max-w-[450px] md:mt-[200px]`}
         >
           <img
-            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/tfdbgpzzso7i3kc0uhbp.jpg"
-            alt="sparksites studio"
+            src={corevalues}
+            alt="sparksites studio core values"
             className="w-[100%]"
           />
         </div>

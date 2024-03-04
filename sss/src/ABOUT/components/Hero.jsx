@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../../style";
+import styles from "../../REUSED/constants/style";
 
 const Hero = () => {
   return (
-    <section className="pt-[95px] xs:pt-[120px]">
+    <section className="pt-[95px] xs:pt-[108px] sm:pt-[120px]">
       <div className="w-full relative">
         <img
           src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/winfnifungv4uavsfi8p.jpg"

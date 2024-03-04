@@ -125,16 +125,19 @@
     visibility: visible;
   }
 }
-.review-container .review-card:last-child {
+.review-container .review-card1:last-child {
   margin-right: 0px;
 }
 
-.review-card {
+.review-card1 {
   background: transparent;
 }
 
-.review-card:hover {
+.review-card1:hover {
   background: var(--black-gradient);
+}
+.review-card2:hover {
+  background: linear-gradient(135deg, #5f00ba 0%, #00a1fe 100%);
 }
 
 .input {
@@ -321,7 +324,7 @@ label {
   transition: transform 0.5s ease, background 0.5s ease-in-out;
 }
 .btn4:hover {
-  background: #3498db;
+  background: #00a1fe;
   transform: scale(1.1, 1.1);
 }
 .overlay {

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../style";
+import styles from "../../REUSED/constants/style";
 
 const Hero = () => {
   return (
@@ -23,7 +23,9 @@ const Hero = () => {
           </div>
           <div className="pb-8">
             <h3 className={`${styles.heading3}`}>Phone</h3>
-            <p className="py-4 text-[14px] xs:text-[18px] roboto">09076803500</p>
+            <p className="py-4 text-[14px] xs:text-[18px] roboto">
+              09076803500
+            </p>
           </div>
           <div className="pb-8">
             <h3 className={`${styles.heading3}`}>Email</h3>

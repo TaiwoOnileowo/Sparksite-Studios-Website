@@ -1,5 +1,5 @@
 import React from "react";
-import { clients } from "../../HOMEPAGE/constants";
+import { clients } from "../../REUSED/constants";
 
 const Clients = () => {
   return (

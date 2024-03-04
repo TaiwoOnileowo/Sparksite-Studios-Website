@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import close from "../../HOMEPAGE/assets/close.svg";
-import menu from "../../HOMEPAGE/assets/menu.svg";
-import styles from "../../style";
-import { navLinks, buttonLinks } from "../../HOMEPAGE/constants";
+import close from "../assets/close.svg";
+import menu from "../assets/menu.svg";
+import styles from "../constants/style";
+import { navLinks, buttonLinks } from "../constants";
 
 const Navbar = () => {
-  const [active, setActive] = useState("About Us");
+  const [active, setActive] = useState(
+    localStorage.getItem("activePage") || "Home"
+  );
   const [toggle, setToggle] = useState(false);
   const [color, setColor] = useState("");
 
@@ -23,14 +25,18 @@ const Navbar = () => {
       window.removeEventListener("scroll", changeColor);
     };
   }, []);
+  function setActivePage(navtitle) {
+    setActive(navtitle);
+    localStorage.setItem("activePage", navtitle);
+  }
   return (
     <>
       <nav
         className={`w-full flex py-[30px] px-4 md:px-6 justify-between items-center
-       ${color} bg-purple-gradient fixed z-[100]  h-[95px] xs:h-[120px] sm:h-[125px]`}
+        ${color} bg-purple-gradient fixed z-[100] h-[75px] xs:h-[110px] sm:h-[125px]`}
       >
         <a href="/">
-          <div className=" -mx-[30px] sm:mx-0 md:max-w-[700px] max-w-[200px] max-h-[120px] flex flex-row items-center">
+          <div className="-mx-[30px] sm:mx-0 md:max-w-[700px] max-w-[200px] max-h-[120px] flex flex-row items-center">
             <img
               src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/bbbbqgjfs494kia7vlw5.jpg"
               alt="Sparksites Studio Logo"
@@ -48,12 +54,13 @@ const Navbar = () => {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={` ${styles.list} ${
+              className={`${styles.list} ${
                 active === nav.title ? "text-white" : "text-dimWhite"
               } mr-10 hover:text-primary transition ease-out duration-300`}
-              onClick={() => setActive(nav.title)}
             >
-              <a href={nav.link}>{nav.title}</a>
+              <a href={nav.link} onClick={() => setActivePage(nav.title)}>
+                {nav.title}
+              </a>
             </li>
           ))}
           <a href={buttonLinks[0].link}>
@@ -63,7 +70,7 @@ const Navbar = () => {
           </a>
         </ul>
 
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center z-[100]">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -83,9 +90,10 @@ const Navbar = () => {
                   className={`${styles.list} ${
                     active === nav.title ? "text-white" : "text-dimWhite"
                   } mb-6`}
-                  onClick={() => setActive(nav.title)}
                 >
-                  <a href={nav.link}>{nav.title}</a>
+                  <a href={nav.link} onClick={() => setActivePage(nav.title)}>
+                    {nav.title}
+                  </a>
                 </li>
               ))}
               <a href={buttonLinks[0].link}>
@@ -100,7 +108,7 @@ const Navbar = () => {
       <div
         className={`${
           toggle ? "hidden" : "block"
-        } top-[90px] xs:top-[119px] scroll-watcher`}
+        } top-[70px] xs:top-[105px] ss:top-[105px] sm:top-[119px] scroll-watcher`}
       ></div>
     </>
   );

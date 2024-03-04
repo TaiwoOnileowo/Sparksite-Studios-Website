@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { carousel, buttonLinks } from "../constants";
+import { carousel, buttonLinks } from "../../REUSED/constants";
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
-import styles from "../../style";
+import styles from "../../REUSED/constants/style";
 
 let count = 0;
 let slideInterval;

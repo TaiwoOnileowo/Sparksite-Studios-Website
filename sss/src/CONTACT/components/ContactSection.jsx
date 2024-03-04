@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import styles from "../../style";
+import styles from "../../REUSED/constants/style";
 
 function ContactForm() {
   const form = useRef();
@@ -36,7 +36,7 @@ function ContactForm() {
         <div className="flex flex-col w-[200px] xs:w-[250px] ss:w-[350px] sm:w-[700px] md:w-[735px] md:px-12">
           <div className="flex flex-col md:pr-4">
             <label
-              className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#3498db] py-4 text-left`}
+              className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#00a1fe] py-4 text-left`}
             >
               Email
             </label>
@@ -49,7 +49,7 @@ function ContactForm() {
           </div>
           <div className="flex flex-col">
             <label
-              className={`label xs:leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#3498db] py-4 text-left`}
+              className={`label xs:leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#00a1fe] py-4 text-left`}
             >
               Name Of Organization
             </label>
@@ -62,7 +62,7 @@ function ContactForm() {
           </div>
 
           <label
-            className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#3498db] py-4 text-left`}
+            className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#00a1fe] py-4 text-left`}
           >
             Address
           </label>
@@ -73,7 +73,7 @@ function ContactForm() {
             required
           />
           <label
-            className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#3498db] py-4 text-left`}
+            className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#00a1fe] py-4 text-left`}
           >
             Enter Your Message
           </label>
@@ -101,11 +101,10 @@ const ContactSection = () => {
             src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_15/dpr_auto/dp25l4yax7llybc9mn7y.jpg"
             className="w-full md:h-[500px] max-w-[400px] md:max-w-[600px]"
             alt="Laptop with Website Image"
-            
           />
         </div>
         <div className="flex flex-col md:w-[800px] ss:p-6">
-          <h1 className={`${styles.heading2} text-center text-[#3498db]`}>
+          <h1 className={`${styles.heading2} text-center text-[#00a1fe]`}>
             Drop Us A line!
           </h1>
           <ContactForm />

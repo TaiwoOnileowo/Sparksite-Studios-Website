@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { services } from "../../HOMEPAGE/constants";
-import styles from "../../style";
-import { layout } from "../../style";
+import { services } from "../../REUSED/constants";
+import styles from "../../REUSED/constants/style";
+import { layout } from "../../REUSED/constants/style";
 const ServiceCard = ({ icon, title, content, index }) => {
   const [isVisible, setIsVisible] = useState(false);
   const contentRef = useRef(null);
@@ -70,7 +70,7 @@ const Services = () => {
             {services.map((service, index) => (
               <ServiceCard key={service.id} {...service} index={index} />
             ))}
-            
+
             <div className="flex justify-center items-center">
               <a href="/services#get-started">
                 <button

@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "../../style";
+import styles from "../constants/style";
 import { footerLinks, socialMedia } from "../constants";
-// import logo from "../assets/logo.png"
 const Footer = () => (
   <section
     className={`${styles.flexCenter} ${styles.paddingY} ${styles.paddingX} flex-col bg-navbar-2`}
@@ -23,7 +22,7 @@ const Footer = () => (
           </div>
         </a>
         <p
-          className={`${styles.heading3} text-white uppercase ss:max-w-[300px] sm:max-w-[350px] md:max-w-[380px]`}
+          className={`${styles.paragraph} text-white uppercase  ss:max-w-[300px] sm:max-w-[350px] md:max-w-[380px]`}
         >
           Empowering Brands - One Spark At A Time
         </p>

@@ -1,6 +1,6 @@
 import React from "react";
-import { portfolio } from "../constants";
-import styles from "../../style";
+import { portfolio } from "../../REUSED/constants";
+import styles from "../../REUSED/constants/style";
 
 const PortfolioCard = ({ project: { title, imageSrc, description, demo } }) => {
   return (

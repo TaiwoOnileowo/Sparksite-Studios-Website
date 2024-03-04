@@ -1,7 +1,7 @@
 import React from "react";
-import { layout } from "../../style";
-import { buttonLinks } from "../constants";
-import styles from "../../style";
+import { layout } from "../../REUSED/constants/style";
+import { buttonLinks } from "../../REUSED/constants";
+import styles from "../../REUSED/constants/style";
 // import uiux from "../assets/uiux.png";
 // import choose from "../assets/choose.png";
 const MoreDeeds = () => {
@@ -41,11 +41,7 @@ const MoreDeeds = () => {
           <p className="font-normal text-[16px] xs:text-[24px] WorkSans my-6 leading-9"></p>
           <div className="flex flex-row flex-wrap md:mt-0 sm:mt-10">
             <a href={buttonLinks[0].link}>
-              <button
-                className={`${styles.button}`}
-              >
-                Get Started
-              </button>
+              <button className={`${styles.button} btn3`}>Get Started</button>
             </a>
           </div>
         </div>

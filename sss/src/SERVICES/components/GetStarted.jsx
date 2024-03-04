@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import styles from "../../style";
+import styles from "../../REUSED/constants/style";
 // import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
@@ -38,7 +38,7 @@ function ContactForm() {
       onSubmit={sendEmail}
     >
       <div className="flex flex-col px-8 sm:px-0 md:px-0">
-        <label className={`label ${styles.heading2} text-[#3498db] py-4`}>
+        <label className={`label ${styles.heading2} text-[#00a1fe] py-4`}>
           Name Of Organization
         </label>
         <input
@@ -47,7 +47,7 @@ function ContactForm() {
           name="organization_name"
           required
         />
-        <label className={`label${styles.heading2} text-[#3498db] py-4`}>
+        <label className={`label${styles.heading2} text-[#00a1fe] py-4`}>
           Preferred Email
         </label>
         <input
@@ -56,7 +56,7 @@ function ContactForm() {
           name="organization_email"
           required
         />
-        <label className={`label ${styles.heading2} text-[#3498db] py-4`}>
+        <label className={`label ${styles.heading2} text-[#00a1fe] py-4`}>
           Which Service Do You Want?
         </label>
         <input
