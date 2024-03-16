@@ -59,6 +59,9 @@ const Footer = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#00A1FE]">
       <p className={`${styles.list} roboto text-white`}>
+        <a href="/">Powered By SSS</a>
+      </p>
+      <p className={`${styles.list} roboto text-white`}>
         Copyright Ⓒ 2024 Sparksites Studios. All Rights Reserved.
       </p>
 

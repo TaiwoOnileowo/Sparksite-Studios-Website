@@ -30,6 +30,7 @@ module.exports = {
       ip:"200px",
       xs: "250px",
       ss: "400px",
+      ts: "600px",
       sm: "700px",
       md: "1060px",
       lg: "1200px",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { carousel, buttonLinks } from "../../REUSED/constants";
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
@@ -28,7 +28,7 @@ function Carousel() {
       slideRef.current.removeEventListener("mouseenter", pauseSlider);
       slideRef.current.removeEventListener("mouseleave", startSlider);
     };
-  }, []);
+  }, []);  
 
   const startSlider = () => {
     slideInterval = setInterval(() => {

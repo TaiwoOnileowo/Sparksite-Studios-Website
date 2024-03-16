@@ -3,7 +3,7 @@ import styles from "../../REUSED/constants/style";
 
 const Hero = () => {
   return (
-    <section className="pt-[95px] xs:pt-[108px] sm:pt-[120px]">
+    <section className="pt-[72px] xs:pt-[108px] sm:pt-[120px]">
       <div className="w-full relative">
         <img
           src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/winfnifungv4uavsfi8p.jpg"
@@ -11,7 +11,7 @@ const Hero = () => {
           alt="Elevate Your Brand Image"
         />
       </div>
-      <div className="absolute sm:max-w-[500px] md:max-w-[700px] max-w-[340px] sm:top-[22%] top-[30%] xs:top-[24%] ss:top-[22%] xs:translate-x-1 ss:translate-x-14 sm:translate-x-[55%] justify-center flex md:translate-x-[122%] md:top-[35%]">
+      <div className="absolute sm:max-w-[500px] md:max-w-[700px] max-w-[340px] sm:top-[15%] top-[30%] ts:top-[25%] xs:top-[24%] ss:top-[22%] xs:translate-x-1 ss:translate-x-14 ts:translate-x-[68%] justify-center flex md:translate-x-[122%] md:top-[35%]">
         <h1
           className={`text-center ${styles.heading2} max-w-[270px] ss:max-w-[400px] sm:max-w-[450px] md:max-w-[500px]
  text-white`}

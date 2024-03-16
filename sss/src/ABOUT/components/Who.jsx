@@ -10,7 +10,7 @@ const Who = () => {
     >
       <div className="flex flex-col md:flex-row justify-center items-center w-full">
         <div
-          className={`flex justify-center mr-0 md:pr-14 w-full md:max-w-[500px] md:max-h-[400px] sm:max-h-[530px] ss:max-h-[350px] xs:max-h-[250px] md:mt-16`}
+          className={`flex justify-center mr-0 md:pr-14 w-full md:max-w-[500px] md:max-h-[400px] sm:max-h-[530px] ts:max-h-[450px] ss:max-h-[350px] xs:max-h-[250px] md:mt-16`}
         >
           <img
             src={sparksitesstudios}

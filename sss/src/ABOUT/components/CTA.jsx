@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <section>
       <div className="bg-align bg-cover flex flex-col sm:flex-row w-full justify-spaceevenly h-[220px] xs:h-[250px] md:h-[280px] bg-center md:bg-fixed">
-        <div className="flex flex-col px-4 py-6 sm:py-0 md:px-16 justify-center items-center ss:max-w-[300px] sm:max-w-[400px] md:max-w-[500px]">
+        <div className="flex flex-col px-6 py-6 sm:py-0 sm:px-10 md:px-16 justify-center items-center ss:max-w-[300px] sm:max-w-[400px] md:max-w-[500px]">
           <h1 className={`${styles.heading3} text-white`}>
             We Create{" "}
             <span className="text-[#8a2be2] text-[24px] xs:text-[25px] ss:text-[28px] sm:text-[30px] md:text-[35px]">
@@ -22,7 +22,7 @@ const CTA = () => {
             </span>{" "}
           </h1>
         </div>
-        <div className="flex sm:justify-center px-4 md:px-0 md:w-[400px] items-start sm:items-center">
+        <div className="flex sm:justify-center px-6 md:px-0 md:w-[400px] items-start sm:items-center">
           <a href="/services#get-started">
             <button className={`${styles.button} btn3 text-white rounded-full`}>
               Get Started

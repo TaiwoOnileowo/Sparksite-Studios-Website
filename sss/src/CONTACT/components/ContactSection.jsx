@@ -33,7 +33,7 @@ function ContactForm() {
       onSubmit={sendEmail}
     >
       <div className="flex flex-col md:px-0 items-center">
-        <div className="flex flex-col w-[200px] xs:w-[250px] ss:w-[350px] sm:w-[700px] md:w-[735px] md:px-12">
+        <div className="flex flex-col w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] sm:w-[700px] md:w-[735px] md:px-12">
           <div className="flex flex-col md:pr-4">
             <label
               className={`label leading-[40.8px] md:leading-[48.8px] text-[25px] xs:text-[25px] ss:text-[38px] md:text-[42px] text-[#00a1fe] py-4 text-left`}
@@ -41,7 +41,7 @@ function ContactForm() {
               Email
             </label>
             <input
-              className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] sm:w-[600px] md:w-[650px]"
+              className="input h-[50px] w-[200px] xs:w-[250px] ts:w-[500px] ss:w-[350px] sm:w-[600px] md:w-[650px]"
               type="text"
               name="organization_email"
               required
@@ -54,7 +54,7 @@ function ContactForm() {
               Name Of Organization
             </label>
             <input
-              className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] sm:w-[600px] md:w-[650px]"
+              className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] sm:w-[600px] md:w-[650px]"
               type="e-mail"
               name="organization_name"
               required
@@ -67,7 +67,7 @@ function ContactForm() {
             Address
           </label>
           <input
-            className="textarea h-[80px] w-[200px] xs:w-[250px] ss:w-[350px] md:w-[650px] sm:w-[600px]"
+            className="textarea h-[80px] w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] md:w-[650px] sm:w-[600px]"
             type="text"
             name="address"
             required
@@ -78,11 +78,11 @@ function ContactForm() {
             Enter Your Message
           </label>
           <textarea
-            className="textarea h-[150px] w-[200px] xs:w-[250px] sm:w-[600px] ss:w-[350px] md:w-[650px]"
+            className="textarea h-[150px] w-[200px] xs:w-[250px] sm:w-[600px] ts:w-[500px] ss:w-[350px] md:w-[650px]"
             name="message"
           />
           <input
-            className={`btn4 py-[10px] ss:py-[15px] my-8 ss:my-12 md:my-12 px-[30px] sm:w-[600px] bg-[#5c0a80] w-[200px] xs:w-[250px] ss:w-[350px] md:w-[650px] cursor-pointer font-medium text-[24px] text-[#FDFDFD] outline-none rounded-full`}
+            className={`btn4 py-[10px] ss:py-[15px] my-8 ss:my-12 md:my-12 px-[30px] ts:w-[500px] sm:w-[600px] bg-[#5c0a80] w-[200px] xs:w-[250px] ss:w-[350px] md:w-[650px] cursor-pointer font-medium text-[24px] text-[#FDFDFD] outline-none rounded-full`}
             type="submit"
             value="Send"
           />

@@ -42,7 +42,7 @@ function ContactForm() {
           Name Of Organization
         </label>
         <input
-          className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] sm:w-[650px] md:w-[700px]"
+          className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] sm:w-[650px] md:w-[700px]"
           type="text"
           name="organization_name"
           required
@@ -51,7 +51,7 @@ function ContactForm() {
           Preferred Email
         </label>
         <input
-          className="input h-[50px] w-[200px] xs:w-[250px] sm:w-[650px] ss:w-[350px] md:w-[700px]"
+          className="input h-[50px] w-[200px] xs:w-[250px] sm:w-[650px] ts:w-[500px] ss:w-[350px] md:w-[700px]"
           type="e-mail"
           name="organization_email"
           required
@@ -60,13 +60,13 @@ function ContactForm() {
           Which Service Do You Want?
         </label>
         <input
-          className="input h-[80px] w-[200px] xs:w-[250px] sm:w-[650px] ss:w-[350px] md:w-[700px]"
+          className="input h-[80px] w-[200px] xs:w-[250px] sm:w-[650px] ts:w-[500px] ss:w-[350px] md:w-[700px]"
           type="text"
           name="service_name"
           required
         />
         <input
-          className={`input ${styles.button} btn4 w-[200px] xs:w-[250px] sm:w-[650px] ss:w-[350px] md:w-[700px]`}
+          className={`input ${styles.button} btn4 w-[200px] xs:w-[250px] ts:w-[500px] sm:w-[650px] ss:w-[350px] md:w-[700px]`}
           type="submit"
           value="Send"
         />
