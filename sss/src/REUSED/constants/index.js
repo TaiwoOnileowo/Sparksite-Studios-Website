@@ -1,6 +1,6 @@
-import carousel1 from "../assets/carousel1.webp";
-import carousel2 from "../assets/carousel2.webp";
-import carousel3 from "../assets/carousel3.webp";
+import spark from "../assets/spark.jpg";
+import grow from "../assets/grow.jpg";
+import transform from "../assets/transform.jpg";
 import websiteicon from "../assets/websiteicon.svg";
 import seoicon from "../assets/seoicon.svg";
 import supporticon from "../assets/supporticon.svg";
@@ -37,35 +37,31 @@ export const navLinks = [
     title: "Contact Us",
   },
 ];
-export const buttonLinks = [
-  {
-    id: "getstarted",
-    link: "/services#getstarted",
-  },
-  {
-    id: "about us",
-    link: "/about",
-  },
-];
+// export const buttonLinks = [
+//   {
+//     id: "getstarted",
+//     link: "/services#getstarted",
+//   },
+//   {
+//     id: "about us",
+//     link: "/about",
+//   },
+// ];
 export const carousel = [
   {
-    image: carousel1,
-    heading: "Welcome to Sparksites Studios",
-    subHeading: "Empowering Brands - One Spark At A Time",
-    btnText: "Get Started",
+    image: spark,
+    heading: "Sparksites Studios",
+    subHeading: "Empowering Brands One Spark At A Time",
   },
   {
-    image: carousel2,
-    heading: "Our Mission",
-    subHeading: "Take Your Brand To The Next Level",
-    btnText: "Learn More",
+    image: grow,
+    heading: "Grow Your Brand With Us",
+    subHeading: "Let's Take Your Brand to New Heights",
   },
   {
-    image: carousel3,
-    heading: "Let's Create Together",
-    subHeading: "Ready to Empower Your Brand?",
-    extraText: "Get Started with Sparksites Studios Now",
-    btnText: "Get Started",
+    image: transform,
+    heading: "Transform Your Vision Into Reality",
+    subHeading: "Let's Do This!",
   },
 ];
 
@@ -75,35 +71,35 @@ export const services = [
     icon: websiteicon,
     title: "Custom Website Design and Development",
     content:
-      "At Sparksites Studios, we specialize in crafting quality websites that aligns with your the goal of your brand. We build Corporate and Professional websites, Landing Pages, E-commerce websites and stores, Blog websites, etc in all sectors. Let's take your brand to the next level. Contact Us to learn more. ",
+      "At Sparksites Studios, we specialize in crafting quality websites that aligns with your the goal of your brand. We build Corporate and Professional websites, Landing Pages, E-commerce websites and stores, Blog websites and more. Your brand needs a website to grow, partner with us to achieve this.",
   },
   {
     id: "service-2",
     icon: responsiveicon,
     title: "Responsive and Mobile-Friendly Layouts",
     content:
-      "What is a quality website without responsiveness? At Sparksites studios, we keep that in mind, crafting websites that are responsive on all devices. We provide all sorts of unique and modern mobile-friendly layouts. We've got you covered. Contact us and get started.",
+      "What is a quality website without responsiveness? At Sparksites studios, we keep that in mind, crafting websites that are responsive on all devices. We provide unique and modern mobile-friendly layouts. We've got you covered. Get started with us now.",
   },
   {
     id: "service-3",
     icon: commerce,
     title: "E-commerce solutions",
     content:
-      "We specialize in developing quality online shopping experiences. Our ecommerce websites are beautifully designed, modern, and equipped with great functionalities. We integrate booking and ordering functionality, users can search and filter products, pay for goods, and lots more. We integrate custom features too. Let us know what you have in mind.",
+      "We specialize in developing quality online shopping experiences. Our ecommerce websites are beautifully designed, modern, and fully functional. Let us know what you have in mind.",
   },
   {
     id: "service-4",
     icon: seoicon,
     title: "Search Engine Optimization(SEO) and Google Analytics",
     content:
-      "Visibility is Key. All our websites are equipped with the best SEO practices. We also include Google Analytics tracking so you can ve well informed on how your website is doing. What are you waiting for? Get Started With Us Now!",
+      "Visibility is Key. All our websites are equipped with the best SEO practices. We also include Google Analytics tracking to keep you informed on your website analytics and traffic details. Let us bring your vision to life!",
   },
   {
     id: "service-5",
     icon: supporticon,
     title: "24/7 Support and Maintenance",
     content:
-      "Our web design process doesn't end in developing your website, we provide 24/7 support and maintenance, helping you navigate any issues you might have.",
+      "Our process doesn't end in web development, we provide 24/7 support and maintenance. Let us be your digital partner.",
   },
 ];
 
@@ -112,23 +108,23 @@ export const portfolio = [
     title: "Rhoda Beddings",
     imageSrc:
       "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/ag1ufguhfcssvzausmef.jpg",
-    description: "A full fledged professional website developed for rhodabeddings business with ordering functionality",
-    demo: "https://rhodabeddings.com.ng/",
+    description: "A professional website for Rhodabeddings Business",
+    // demo: "https://rhodabeddings.com.ng/",
+  },
+  {
+    title: "The Learnact",
+    imageSrc:
+      "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/zkazjdbx1y804v1sqvee.jpg",
+    description:
+      "A Learning Management System that educates individuals on SDG goals for Learnact Organization",
+    demo: "https://thelearnact.com/",
   },
   {
     title: "Drex Hosting Company",
     imageSrc:
       "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/u06i9xhlqq0lpwseqohb.jpg",
-    description:
-      "A responsive modern landing page made for DREX hosting and domains company.",
+    description: "A modern landing page for DREX Hosting and Domains Company.",
     demo: "https://drexhosting.netlify.app/",
-  },
-  {
-    title: "Hoobank",
-    imageSrc:
-      "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/zs8zwvdtda1sj8bbmdbc.jpg",
-    description: "A responsive modern landing page for Hoobank company",
-    demo: "https://h00bankweb.netlify.app/",
   },
 ];
 export const feedback = [
@@ -143,7 +139,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "The landing page built for me was a standout one, with a modern and beautiful layout.",
+      "The landing page they made for me was a standout one, with a modern and beautiful layout.",
     name: "Hoobank",
     title: "Credit Card Company",
     img: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/ttkdstaql8rmaz9rsp2m.jpg",
@@ -151,7 +147,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      " My Restaurant has changed levels thanks to Sparksites Studios, Customers now order and pay from our website.",
+      " My Restaurant has increased sales thanks to Sparksites Studios, Customers can also now easily order and pay from directly our website.",
     name: "De Kitchen",
     title: "A restaurant",
     img: "https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_5/dpr_auto/veflf8i4nlurefhcfjhe.jpg",
@@ -173,6 +169,10 @@ export const footerLinks = [
       {
         name: "About Us",
         link: "/about",
+      },
+      {
+        name: "Contact Us",
+        link: "/contact",
       },
       {
         name: "Request A Proposal",
@@ -307,14 +307,4 @@ export const Modalservices = [
   },
 ];
 
-export const servicesText=[
- {
-  heading1: "Take Your Brand To The Next Level",
-  heading2: "We Offer:"
- } ,
- {
-  heading1: "Our Services",
-  heading2: ""
- } 
-]
-
+export const servicesText = [];

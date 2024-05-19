@@ -47,16 +47,14 @@ const Modal = () => {
           <h1 className={`${styles.heading3} text-white`}>
             Get <span className="text-[#00BFFF]">20% OFF</span> All Services.
           </h1>
-          <p className={`${styles.heading3} sm:block hidden  text-white`}>
-            We Offer:
-          </p>
+         
           <div>
             {Modalservices.map((modalservice) => (
-              <ul className="w-full hidden ss:block" key={modalservice.id}>
-                <li className="font-medium text-white md:text-[19px] sm:text-[18px] xs:text-[14px] ss:text-[16px]">
+              <ol className="ul w-full hidden ss:block" key={modalservice.id}>
+                <li className="font-medium marker:text-[#00BFFF] text-white md:text-[19px] sm:text-[18px] xs:text-[14px] ss:text-[16px]">
                   {modalservice.service}
                 </li>
-              </ul>
+              </ol>
             ))}
             <button
               className={`${styles.button} btn3 mt-4`}

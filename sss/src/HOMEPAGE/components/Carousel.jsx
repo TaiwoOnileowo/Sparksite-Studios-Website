@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef} from "react";
-import { carousel, buttonLinks } from "../../REUSED/constants";
+import React, { useState, useEffect, useRef } from "react";
+import { carousel } from "../../REUSED/constants";
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
 import styles from "../../REUSED/constants/style";
@@ -8,7 +8,7 @@ let count = 0;
 let slideInterval;
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const [fade, setFade] = useState("");
   const slideRef = useRef();
 
   const removeAnimation = () => {
@@ -16,40 +16,37 @@ function Carousel() {
   };
 
   useEffect(() => {
-    slideRef.current.addEventListener("animationend", removeAnimation);
-    slideRef.current.addEventListener("mouseenter", pauseSlider);
-    slideRef.current.addEventListener("mouseleave", startSlider);
+    // slideRef.current.addEventListener("animationend", removeAnimation);
 
     startSlider();
 
     return () => {
       pauseSlider();
       slideRef.current.removeEventListener("animationend", removeAnimation);
-      slideRef.current.removeEventListener("mouseenter", pauseSlider);
-      slideRef.current.removeEventListener("mouseleave", startSlider);
     };
-  }, []);  
+  }, []);
 
   const startSlider = () => {
     slideInterval = setInterval(() => {
       handleOnNextClick();
-    }, 5000);
+    }, 8000);
   };
 
   const pauseSlider = () => {
     clearInterval(slideInterval);
+
   };
 
   const handleOnNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % carousel.length);
-    slideRef.current.querySelector("img").classList.add("fade-anim");
+    // slideRef.current.querySelector("img").classList.add("fade-anim");
+    // setFade("fade-anim")
   };
 
   const handleOnPrevClick = () => {
-    const carouselLength = carousel.length;
-    count = (currentIndex - 1 + carouselLength) % carouselLength;
+    count = (currentIndex - 1 + carousel.length) % carousel.length;
     setCurrentIndex(count);
-    slideRef.current.querySelector("img").classList.add("fade-anim");
+    // slideRef.current.querySelector("img").classList.add("fade-anim");
   };
 
   const handleImageLoad = () => {
@@ -57,48 +54,37 @@ function Carousel() {
   };
 
   return (
-    <section ref={slideRef} className="w-full select-none relative ">
-      <div className="aspect-w-16 pt-[75px] xs:pt-[105px] ss:pt-0 aspect-h-9">
+    <section ref={slideRef} className="w-full select-none relative">
+      <div
+        className=""
+        onMouseEnter={pauseSlider}
+        onMouseLeave={startSlider}
+      >
         <img
           src={carousel[currentIndex].image}
           alt="carousel image"
-          className="w-[100%] h-[220px] xs:h-[300px] ss:h-[450px] md:h-[600px]"
+          className="w-[100%] h-[220px] xs:h-[300px] ss:h-[450px] md:h-[550px]"
         />
       </div>
       <div
-        className="absolute top-[62%] ss:top-2/3 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[55%] md:-translate-y-[50%] text-center justify-center items-center w-[80%] max-w-xl"
+        className="absolute top-[62%] ss:top-[25%] left-1/2 transform -translate-x-1/2 text-center flex flex-col items-center"
         onLoad={handleImageLoad}
       >
         <h2
-          className={`${
-            currentIndex === 1 ? "text-[#030000]" : " text-white"
-          } font-semibold ${styles.heading2} mt-[35px] xs:mt-[30px]`}
+          className={`text-white
+          font-bold ${styles.heading2} mt-[35px] w-[350px] sm:w-full xs:mt-0 uppercase`}
         >
           {carousel[currentIndex].heading}
         </h2>
         <p
-          className={`${
-            currentIndex === 1 ? "text-[#030000]" : " text-white"
-          } font-semibold ${currentIndex === 2 ? "hidden md:block" : ""} ${
-            styles.heading3
-          } mt-2`}
+          className={` text-white
+           font-[600] w-[300px] sm:w-[400px] ${styles.heading3} mt-[10px] uppercase`}
         >
           {carousel[currentIndex].subHeading}
         </p>
-        {carousel[currentIndex].extraText && (
-          <p className={`${styles.heading3} text-white`}>
-            {carousel[currentIndex].extraText}{" "}
-          </p>
-        )}
-        <a
-          href={
-            currentIndex === 1
-              ? `${buttonLinks[1].link}`
-              : `${buttonLinks[0].link}`
-          }
-        >
-          <button className={`${styles.button} btn3 mt-4 xs:mt-8`}>
-            {carousel[currentIndex].btnText}
+        <a href="/services#getstarted">
+          <button className={`${styles.button} btn3 mt-4 xs:mt-12`}>
+            Get Started
           </button>
         </a>
       </div>

@@ -29,7 +29,7 @@ const Choose = () => {
         </div>
 
         <div
-          className={`flex justify-center md:pr-[40px] md:pl-16 mr-0 mt-0 sm:w-full md:w-[720px] xs:h-[200px] ss:h-[300px] sm:h-[350px] md:h-[550px] md:pt-32`}
+          className={`flex justify-center md:pr-[40px] md:pl-16 mr-0 mt-0 sm:w-full md:w-[720px] xs:h-[200px] ss:h-[300px] sm:h-[400px] md:h-[550px] md:pt-32`}
         >
           <img
             src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/choose_mowxd9.jpg"

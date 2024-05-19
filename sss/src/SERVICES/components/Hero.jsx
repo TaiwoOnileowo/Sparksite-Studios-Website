@@ -6,17 +6,17 @@ const Hero = () => {
   return (
     <section
       id="product"
-      className={`flex md:flex-row bg-[#F8F8F9] justify-center max-h-[520px] xs:max-h-[580px] sm:max-h-[375px] md:max-h-[600px] w-full xs:mt-[100px] ss:mt-[125px] ts:mt-[120px] sm:mt-[125px] pt-[60px] xs:pt-[70px] ts:pt-[50px] sm:pt-0 ss:mb-8 md:mr-2`}
+      className={`flex md:flex-row bg-[#F8F8F9] max-h-[520px] xs:max-h-[580px] sm:max-h-[375px] md:max-h-[600px] w-full ss:mb-8 md:mr-2`}
     >
-      <div className="flex md:flex-row sm:flex-row flex-col-reverse mt-0 xs:pb-8 h-[500px]">
+      <div className="flex md:flex-row sm:flex-row items-center justify-between flex-col-reverse mt-0 pb-8 h-full w-full">
         <div
-          className={`${layout.sectionInfo} pt-[15px] sm:pt-[30px] md:pt-[50px] px-6 ss:px-8 max-w-[680px]`}
+          className={` pt-[15px] sm:pt-[30px] md:pt-[50px] w-full items-center h-full flex-col justify-center flex`}
         >
-          <h1 className={`${styles.heading2} text-black font-medium`}>
+          <h1 className={`${styles.heading2} text-black font-medium max-w-[207px] xs:max-w-[265px] ss:max-w-[302px] sm:max-w-[350px] md:max-w-[415px]`}>
             Elevate Your Brand's Online Presence with
             <br className="sm:block hidden" /> Sparksites Studios
           </h1>
-          <div className="flex flex-row flex-wrap mt-6 md:mt-10 ">
+          <div className=" mt-6 md:mt-10 ">
             <a href="#get-started">
               <button
                 className={`roboto font-medium text-[14px] xs:text-[16px] ss:text-[18px] text-white rounded-full py-3 px-4 color-1 btn3`}

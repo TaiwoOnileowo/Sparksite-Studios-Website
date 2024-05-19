@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles, { layout } from "../constants/style";
-import { services, servicesText } from "../constants";
+import { services } from "../constants";
 
 const ServiceCard = ({ icon, title, content, index }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,23 +59,16 @@ const ServiceCard = ({ icon, title, content, index }) => {
 const Services = () => {
   return (
     <section className=" w-full py-16 px-2 md:px-4 color-2">
-      <div className="flex flex-col">
-        <div className="flex flex-col items-center mx-6 md:mx-36">
+      <div className="flex flex-col items-center">
+        
           <h2
-            className={`${styles.heading2} sm:max-w-[450px] text-white text-center`}
+            className={`${styles.heading2} sm:max-w-[450px] text-white md:pb-12`}
           >
-            {window.location.pathname === "/"
-              ? servicesText[0].heading1
-              : servicesText[1].heading1}
-          </h2>
-          {servicesText[0].heading2 && (
-            <p className={`${styles.heading2} xs:pt-4 text-white py-2 xs:py-6`}>
-              We Offer:
-            </p>
-          )}
-        </div>
+            Our Services
+          </h2>     
+    
         <div className="flex justify-center items-center">
-          <div className={`${layout.sectionImg} flex-col`}>
+          <div className={`md:ml-10 ml-0 md:mt-0 mt-10 relative flex-col`}>
             {services.map((service, index) => (
               <ServiceCard key={service.id} {...service} index={index} />
             ))}

@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="pb-8">
             <h3 className={`${styles.heading3}`}>Address</h3>
             <p className="py-4 text-[14px] xs:text-[18px] roboto">
-              5, SuiteLife Crescent, Hope Estate, Ago Palace Way, Lagos,
+              5, SuiteLife Close, Hope Estate, Ago Palace Way, Lagos,
               Nigeria.
             </p>
           </div>

@@ -1,10 +1,8 @@
 import React from "react";
 import { layout } from "../../REUSED/constants/style";
-import { buttonLinks } from "../../REUSED/constants";
 import styles from "../../REUSED/constants/style";
-// import uiux from "../assets/uiux.png";
-// import choose from "../assets/choose.png";
-const MoreDeeds = () => {
+
+const Choose = () => {
   return (
     <section id="product" className={`flex md:flex-row flex-col`}>
       <div className="flex flex-col md:flex-row justify-center md:justify-normal md:items-stretch items-center">
@@ -12,7 +10,7 @@ const MoreDeeds = () => {
           className={`flex justify-center mr-0 md:mt-0 md:pl-[60px] md:pr-14 w-full md:max-w-[750px] md:max-h-[600px] md:pt-32`}
         >
           <img
-            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/choose_mowxd9.jpg"
+            src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/dpr_auto/choose_mowxd9.jpg"
             alt="choose us image"
             className="w-[100%]"
           />
@@ -40,7 +38,7 @@ const MoreDeeds = () => {
           </ul>
           <p className="font-normal text-[16px] xs:text-[24px] WorkSans my-6 leading-9"></p>
           <div className="flex flex-row flex-wrap md:mt-0 sm:mt-10">
-            <a href={buttonLinks[0].link}>
+            <a href="/services#getstarted">
               <button className={`${styles.button} btn3`}>Get Started</button>
             </a>
           </div>
@@ -50,4 +48,4 @@ const MoreDeeds = () => {
   );
 };
 
-export default MoreDeeds;
+export default Choose;

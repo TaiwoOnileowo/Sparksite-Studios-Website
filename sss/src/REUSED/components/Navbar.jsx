@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import styles from "../constants/style";
-import { navLinks, buttonLinks } from "../constants";
+import { navLinks } from "../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState(
@@ -10,7 +10,7 @@ const Navbar = () => {
   );
   const [toggle, setToggle] = useState(false);
   const [color, setColor] = useState("");
-
+  const [sticky, setSticky] = useState("");
   useEffect(() => {
     function changeColor() {
       const scrollY = window.scrollY;
@@ -18,6 +18,11 @@ const Navbar = () => {
         setColor("bg-navbar-2");
       } else {
         setColor("bg-purple-gradient");
+      }
+      if (scrollY > 600 && scrollY <= 9000) {
+        setSticky("nav1");
+      } else {
+        setSticky("");
       }
     }
     window.addEventListener("scroll", changeColor);
@@ -33,7 +38,7 @@ const Navbar = () => {
     <>
       <nav
         className={`w-full flex py-[30px] px-4 md:px-6 justify-between items-center
-        ${color} bg-purple-gradient fixed z-[100] h-[75px] xs:h-[110px] sm:h-[125px]`}
+        ${color} ${sticky} bg-purple-gradient z-[10] h-[90px] xs:h-[125px] sm:h-[135px]`}
       >
         <a href="/">
           <div className="-mx-[30px] sm:mx-0 md:max-w-[700px] max-w-[200px] max-h-[120px] flex flex-row items-center">
@@ -63,7 +68,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <a href={buttonLinks[0].link}>
+          <a href="/services#getstarted">
             <button className="btn py-3 px-4 bg-navbar font-roboto font-medium text-[18px] text-white outline-none rounded-full">
               Request A Proposal
             </button>
@@ -77,38 +82,48 @@ const Navbar = () => {
             className="w-[20px] ss:w-[28px] h-[28px] object-contain z-[100]"
             onClick={() => setToggle(!toggle)}
           />
-
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 bg-purple-gradient nav w-[65%] xs:w-[58%] ss:w-[50%] transition-all duration-500 ease-in-out`}
-          >
-            <ul className="list-none flex justify-center items-center flex-1 flex-col">
-              {navLinks.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`${styles.list} ${
-                    active === nav.title ? "text-white" : "text-dimWhite"
-                  } mb-6`}
-                >
-                  <a href={nav.link} onClick={() => setActivePage(nav.title)}>
-                    {nav.title}
-                  </a>
-                </li>
-              ))}
-              <a href={buttonLinks[0].link}>
-                <button className="btn py-2 ss:py-4 px-2 ss:px-4 bg-navbar font-roboto font-medium text-[12px] xs:text-[14px] ss:text-[16px] text-white outline-none rounded-full">
-                  Request A Proposal
-                </button>
-              </a>
-            </ul>
-          </div>
         </div>
       </nav>
+
+      <div
+        className={`${
+          !toggle ? "hidden" : "flex-col"
+        } p-6 bg-purple-gradient nav w-[65%] xs:w-[58%] ss:w-[50%] transition-all duration-500 ease-in-out`}
+      >
+        <div className="justify-end flex mt-6 mr-8">
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[20px] ss:w-[28px] h-[28px] object-contain z-[100]"
+            onClick={() => setToggle(!toggle)}
+          />
+        </div>
+        <ul className="list-none flex justify-center items-center mt-[60%] flex-1 flex-col">
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`${styles.list} ${
+                active === nav.title ? "text-white" : "text-dimWhite"
+              } mb-6`}
+            >
+              <a href={nav.link} onClick={() => setActivePage(nav.title)}>
+                {nav.title}
+              </a>
+            </li>
+          ))}
+          <a href="/services#getstarted">
+            <button className="btn py-2 ss:py-4 px-2 ss:px-4 bg-navbar font-roboto font-medium text-[12px] xs:text-[14px] ss:text-[16px] text-white outline-none rounded-full">
+              Request A Proposal
+            </button>
+          </a>
+        </ul>
+      </div>
       <div
         className={`${
           toggle ? "hidden" : "block"
-        } top-[70px] xs:top-[105px] ss:top-[105px] sm:top-[119px] scroll-watcher`}
+        } top-[85px] xs:top-[120px] sm:top-[130px] ${
+          sticky ? "scroll-watcher" : null
+        }`}
       ></div>
     </>
   );

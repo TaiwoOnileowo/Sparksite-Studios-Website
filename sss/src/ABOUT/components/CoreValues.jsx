@@ -23,7 +23,7 @@ const CoreValues = () => {
         >
           <h3 className={`${styles.heading2} text-left`}>Our Core Values</h3>
           <p className="font-normal text-[20px] xs:text-[22px] ss:text-[24px] WorkSans mt-4 mb-2 leading-9">
-            At SparkSites Studios, these are are our major upholds:
+            At SparkSites Studios, these are our core values:
           </p>
           <ul className="ul">
             <li className="text-[18px] xs:text-[20px] ss:text-[21px] WorkSans leading-[35px] pt-[2px]">
@@ -31,7 +31,7 @@ const CoreValues = () => {
               benefits our clients.
             </li>
             <li className="font-normal text-[18px] xs:text-[20px] ss:text-[21px] WorkSans leading-[35px] pt-[2px]">
-              <b>Passion:</b> Passion drives us forward, fuels our creativity.
+              <b>Passion:</b> Passion drives us forward and fuels our creativity.
             </li>
             <li className="font-normal text-[18px] xs:text-[20px] ss:text-[21px] WorkSans leading-[35px] pt-[2px]">
               <b>Accuracy: </b>We understand the importance of precision and
@@ -43,7 +43,7 @@ const CoreValues = () => {
             </li>
             <li className="font-normal text-[18px] xs:text-[20px] ss:text-[21px] WorkSans leading-[35px] pt-[2px]">
               <b>Knowledge:</b> We're dedicated to staying at the forefront of
-              our industry. Through continuous learning and development.
+              our industry, through continuous learning and development.
             </li>
           </ul>
         </div>

@@ -17,13 +17,13 @@ module.exports = {
       },
       backgroundImage: {
         brand:
-          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/d5bkzu5rvf9qxok3olxv.jpg")',
+          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/dpr_auto/d5bkzu5rvf9qxok3olxv.jpg")',
         "CTA-image":
-          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_50/dpr_auto/wvvkc3no6jtkecmyoizj.jpg")',
+          'url("ctahome.jpg")',
         align:
-          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/c0ztoyt4rmc1pchiqdwh.jpg")',
+          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/dpr_auto/c0ztoyt4rmc1pchiqdwh.jpg")',
         partner:
-          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_auto/dpr_auto/ta90mcrn9fo0w66nhbql.jpg")',
+          'url("https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/dpr_auto/ta90mcrn9fo0w66nhbql.jpg")',
       },
     },
     screens: {

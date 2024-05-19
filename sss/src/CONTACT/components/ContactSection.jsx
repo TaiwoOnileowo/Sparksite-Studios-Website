@@ -11,7 +11,7 @@ function ContactForm() {
     emailjs
       .sendForm(
         "service_yo3wc8u",
-        "template_pj3yxyd",
+        "template_em583kn",
         form.current,
         "YdAoRX8W6yCSRhU2R"
       )
@@ -96,7 +96,7 @@ const ContactSection = () => {
   return (
     <section className="color-2">
       <div className="flex md:flex-row-reverse flex-col">
-        <div className="flex w-full items-center justify-center sm:w-[500px] md:w-full sm:ml-36 md:ml-0 pt-10 ss:pt-16 px-4 md:pl-4 md:pr-4 md:pt-64">
+        <div className="flex w-full items-center justify-center sm:w-[500px] md:w-full sm:ml-36 md:ml-0 pt-10 ss:pt-16 px-4 md:pl-4 md:pr-4 md:pt-20">
           <img
             src="https://res.cloudinary.com/dixg66tpb/image/upload/f_webp/q_15/dpr_auto/dp25l4yax7llybc9mn7y.jpg"
             className="w-full md:h-[500px] max-w-[400px] md:max-w-[600px]"

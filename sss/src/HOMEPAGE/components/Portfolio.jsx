@@ -29,7 +29,7 @@ const Portfolio = () => {
   return (
     <section id="projects" className="mt-[75px] text-white color-2 py-12">
       <h2 className={`${styles.heading2} text-center px-4 md:px-0`}>
-        View Some Of Our Works
+         Our Works
       </h2>
       <div className="mt-[35px] flex flex-row items-center gap-[25px] px-4 ss:px-0 flex-wrap md:g-[25px] justify-center w-[100%]">
         {portfolio.map((project, id) => {

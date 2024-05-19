@@ -24,11 +24,11 @@ const Footer = () => (
         <p
           className={`${styles.paragraph} text-white uppercase  ss:max-w-[300px] sm:max-w-[350px] md:max-w-[380px]`}
         >
-          Empowering Brands - One Spark At A Time
+          Empowering Brands One Spark At A Time
         </p>
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+      <div className="flex-[1.5] w-full flex flex-row justify-evenly ju flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerlink) => (
           <div
             key={footerlink.title}
@@ -58,11 +58,11 @@ const Footer = () => (
     </div>
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#00A1FE]">
-      <p className={`${styles.list} roboto text-white`}>
+      <p className={`${styles.list} text-white`}>
         <a href="/">Powered By SSS</a>
       </p>
-      <p className={`${styles.list} roboto text-white`}>
-        Copyright Ⓒ 2024 Sparksites Studios. All Rights Reserved.
+      <p className={`xs:text-[14px] text-[12px] ss:text-[16px] roboto text-white text-center`}>
+        Copyright Ⓒ 2024 <span><a href="/" className="hover:underline">Sparksites Studios</a></span>. All Rights Reserved.
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">

@@ -33,40 +33,48 @@ function ContactForm() {
 
   return (
     <form
-      className="flex flex-col items-center w-full mt-11 text-[16px]"
+      className="flex flex-col items-center justify-center w-full mt-11 text-[16px]"
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="flex flex-col px-8 sm:px-0 md:px-0">
-        <label className={`label ${styles.heading2} text-[#00a1fe] py-4`}>
+      <div className="flex flex-col px-16 ss:px-8 sm:px-0">
+        <label className={`label ${styles.heading3} text-[#00a1fe] py-2 ss:py-4`}>
           Name Of Organization
         </label>
         <input
-          className="input h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] sm:w-[650px] md:w-[700px]"
+          className="input h-[35px] xs:h-[50px] w-[200px] xs:w-[250px] ss:w-[350px] ts:w-[500px] sm:w-[650px] md:w-[700px]"
           type="text"
           name="organization_name"
           required
         />
-        <label className={`label${styles.heading2} text-[#00a1fe] py-4`}>
-          Preferred Email
-        </label>
+        <div className="flex items-center justify-center flex-col ts:flex-row w-full ss:mt-4">
+          <div className="ts:mr-2 flex flex-col">
+            <label className={`label${styles.heading3} text-[#00a1fe] py-2 ss:py-4`}>
+              Phone Number
+            </label>
+            <input
+              className="input h-[35px] xs:h-[50px] w-[200px] xs:w-[250px] sm:w-[320px] ts:w-[240px] ss:w-[350px] md:w-[340px]"
+              type="text"
+              name="organization_email"
+              autoComplete="number"
+              required
+            />
+          </div>
+          <div className="ts:ml-2 flex flex-col">
+            <label className={`label${styles.heading3} text-[#00a1fe] py-2 ss:py-4`}>
+              Preferred Email
+            </label>
+            <input
+              className="input h-[35px] xs:h-[50px] w-[200px] xs:w-[250px] sm:w-[320px] ts:w-[240px] ss:w-[350px] md:w-[340px]"
+              type="e-mail"
+              name="organization_email"
+              required
+            />
+          </div>
+        </div>
+
         <input
-          className="input h-[50px] w-[200px] xs:w-[250px] sm:w-[650px] ts:w-[500px] ss:w-[350px] md:w-[700px]"
-          type="e-mail"
-          name="organization_email"
-          required
-        />
-        <label className={`label ${styles.heading2} text-[#00a1fe] py-4`}>
-          Which Service Do You Want?
-        </label>
-        <input
-          className="input h-[80px] w-[200px] xs:w-[250px] sm:w-[650px] ts:w-[500px] ss:w-[350px] md:w-[700px]"
-          type="text"
-          name="service_name"
-          required
-        />
-        <input
-          className={`input ${styles.button} btn4 w-[200px] xs:w-[250px] ts:w-[500px] sm:w-[650px] ss:w-[350px] md:w-[700px]`}
+          className={`input ${styles.button} h-[35px] xs:h-[50px] flex items-center justify-center btn4 w-[200px] xs:w-[250px] ts:w-[500px] sm:w-[650px] ss:w-[350px] md:w-[700px]`}
           type="submit"
           value="Send"
         />
@@ -126,16 +134,13 @@ const GetStarted = () => {
           Get The Ball Rolling!
         </h2>
         <p className={`${styles.paragraph} xs:pt-4 text-center text-white`}>
-          Input Your E-mail and Service You Want From Us
-        </p>
-        <p className={`${styles.paragraph} pt-256 text-center text-white`}>
-          We Send a Proposal.
+          Input Your E-mail and Phone Number
         </p>
         <h3 className={`${styles.heading2} text-center text-white`}>
           It's as Easy as That!
         </h3>
       </div>
-      <div className="flex">
+      <div className="">
         <ContactForm />
       </div>
     </section>
